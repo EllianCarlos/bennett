@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "plugins": [
+            {
+                "transform": "typescript-transform-paths"
+            }
+        ],
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": ["es2020"],
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "target": "es2020",
+        "outDir": "dist",
+        "resolveJsonModule": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@domain": ["domain/*"],
+            "@infra": ["infra/*"],
+            "@app": ["app/*"],
+            "@interfaces": ["interfaces/*"]
+        }
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules", "test"]
+}
