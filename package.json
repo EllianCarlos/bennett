@@ -1,0 +1,11 @@
+{
+  "name": "bennett",
+  "version": "1.0.0",
+  "description": "An unlucky health checker",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --config ./test/jest.config.js --coverage test/"
+  },
+  "author": "elliancarlos",
+  "license": "MIT"
+}
